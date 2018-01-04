@@ -9,7 +9,7 @@ Cleanup S3 based Docker registry v2:
 
 ```bash
 ## Build container (optional)
-$ docker build -t luzifer/reg-clean .
+$ docker build -t quay.io/luzifer/reg-clean .
 
 ## Define AWS credentials
 $ cat env
@@ -22,5 +22,5 @@ BUCKET=io.luzifer.docker-registry
 REGISTRY=https://registry.luzifer.io
 
 ## Execute script
-$ docker run --rm -ti --env-file=env luzifer/reg-clean
+$ docker run --rm -ti --env-file=env quay.io/luzifer/reg-clean
 ```
